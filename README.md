@@ -26,7 +26,9 @@ Prerequisites
 4. Download the Autonomous Agent Framework project submodule
 
    `cd <path of newly cloned project>`
+
    git submodule init
+
    git submodule update
 
 You know should be good to go.
