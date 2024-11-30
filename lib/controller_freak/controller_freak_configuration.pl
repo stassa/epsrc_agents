@@ -99,7 +99,9 @@ debug_environment(solve,tiles,true).
 %       environment, and the results of an agent's actions in that
 %       environment.
 %
-environment(lib(grid_master/data/environments/basic_environment/'basic_environment.pl')
+%environment(lib(grid_master/data/environments/basic_environment/'basic_environment.pl')
+%           ,basic_environment).
+environment(data(bath/model/data/'basic_sim_environment.pl')
            ,basic_environment).
 
 
