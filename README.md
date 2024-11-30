@@ -134,7 +134,7 @@ map(model_root(data/occ_grid_1),400,255,'Map1.png').
 You can choose one of the commented-out options by un-commenting it. Remember to
 comment-out the option you want.
 
-Remember to "make" the SWI-Prolog project again to loade the new configuration
+Remember to "make" the SWI-Prolog project again to load the new configuration
 options.
 
 ### Changing the controller
@@ -157,3 +157,6 @@ comment-in the following one:
 ```
 controller(controllers/'cantor.pl',cantor,t).
 ```
+
+Remember to "make" the SWI-Prolog project again to load the new configuration
+options.
