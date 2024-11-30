@@ -1,4 +1,5 @@
-:-module(controller_freak_configuration, [controller/3
+:-module(controller_freak_configuration, [controller/1
+                                         ,controller/3
                                          ,debug_map/2
                                          ,debug_environment/3
                                          ,environment/2
@@ -15,6 +16,25 @@
 
 :-dynamic(executor/1).
 
+%!      controller(?Name) is det.
+%
+%       Name of the currently configured controller.
+%
+%       Used to simplify querying this configuration file for the
+%       current setting of the controller/3 option, pointing to the
+%       source file holding the controller tuples.
+%
+%       Known controllers:
+%       * rook: moves in four directions, like a rook in chess,
+%         observing only the occupancy of immediately adjacent locations
+%         in directions Up, Right, Down, Left.
+%       * cantor: moves in eight directions, including diagonals,
+%         observing only the occupancy of immediately adjacne locations
+%         in each of the eight directions.
+%
+controller(C):-
+        controller(_,C,_).
+
 
 %!      controller(?Path,?Module,?Symbol) is det.
 %
@@ -22,8 +42,8 @@
 %
 %       Used to find a controller for executor/5.
 %
-controller(controllers/'grid_navigation_controller.pl',grid_navigation_controller,t).
-%controller(controllers/'8w_grid_navigation_controller.pl',grid_navigation_controller,t).
+controller(controllers/'rook.pl',rook,t).
+%controller(controllers/'cantor.pl',cantor,t).
 
 
 %!      debug_map(?Subject,?How) is semidet.

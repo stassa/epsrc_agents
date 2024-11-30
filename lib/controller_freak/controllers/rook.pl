@@ -1,4 +1,4 @@
-:-module(grid_navigation_controller, [t/4]).
+:-module(rook, [t/4]).
 
 opposite_actions(step_up-q0,step_down-q2).
 opposite_actions(step_down-q2,step_up-q0).

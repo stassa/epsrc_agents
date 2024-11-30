@@ -387,7 +387,7 @@ example_clauses(call).
 %	The Path and Module name of an experiment file.
 %
 %experiment_file('data/examples/hello_world.pl',hello_world).
-experiment_file('data/examples/tiny_kinship.pl',tiny_kinship).
+%experiment_file('data/examples/tiny_kinship.pl',tiny_kinship).
 %experiment_file('data/examples/anbn.pl',anbn).
 %experiment_file('data/examples/abduced.pl',abduced).
 %experiment_file('data/examples/user_metarules.pl',user_metarules).
@@ -405,6 +405,7 @@ experiment_file('data/examples/tiny_kinship.pl',tiny_kinship).
 %experiment_file('data/examples/ackermann.pl',ackermann).
 %experiment_file('data/examples/list_processing.pl',list_processing).
 %experiment_file('data/examples/even_odd.pl',even_odd).
+experiment_file('data/bath/model/data/basic_sim_experiments.pl',basic_sim_xp).
 
 
 %!      fetch_clauses(?Whence) is semidet.

@@ -1,4 +1,4 @@
-:-module(grid_navigation_controller, [t/4]).
+:-module(cantor, [t/4]).
 
 opposite_actions(step_up-q0,step_down-q4).
 opposite_actions(step_up_right-q1,step_down_left-q5).
